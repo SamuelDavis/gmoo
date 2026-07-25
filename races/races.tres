@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Races" format=3 uid="uid://sp3iyuqbygpw"]
+
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="1_6psys"]
+[ext_resource type="Script" uid="uid://dw6o6egt71yar" path="res://races/races.gd" id="3_21yf6"]
+[ext_resource type="Resource" uid="uid://brf54apo0qgf5" path="res://races/human.tres" id="3_koo1w"]
+[ext_resource type="Resource" uid="uid://bn3uo6fev5mlm" path="res://races/mrrshan.tres" id="4_kih85"]
+[ext_resource type="Resource" uid="uid://davolsl2frvql" path="res://races/silicoid.tres" id="5_x71ln"]
+[ext_resource type="Resource" uid="uid://bjt01trgpw4dw" path="res://races/sakkra.tres" id="6_w2lwg"]
+[ext_resource type="Resource" uid="uid://7qm25doj4e2i" path="res://races/psilon.tres" id="7_82jp7"]
+[ext_resource type="Resource" uid="uid://cvo778qrhb37i" path="res://races/alkari.tres" id="8_v5uyt"]
+[ext_resource type="Resource" uid="uid://b50lbv6shi3km" path="res://races/klackon.tres" id="9_suyyt"]
+[ext_resource type="Resource" uid="uid://bsq6vmx0pc0v2" path="res://races/bulrathi.tres" id="10_uqmub"]
+[ext_resource type="Resource" uid="uid://chojbxcp5wajh" path="res://races/meklar.tres" id="11_iqcsd"]
+[ext_resource type="Resource" uid="uid://dvhh7b8f0wxm2" path="res://races/darlok.tres" id="12_r8njs"]
+
+[resource]
+script = ExtResource("3_21yf6")
+list = Array[ExtResource("1_6psys")]([ExtResource("3_koo1w"), ExtResource("4_kih85"), ExtResource("5_x71ln"), ExtResource("6_w2lwg"), ExtResource("7_82jp7"), ExtResource("8_v5uyt"), ExtResource("9_suyyt"), ExtResource("10_uqmub"), ExtResource("11_iqcsd"), ExtResource("12_r8njs")])
+metadata/_custom_type_script = "uid://dw6o6egt71yar"

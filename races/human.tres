@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://brf54apo0qgf5"]
+
+[ext_resource type="Texture2D" uid="uid://d1lmj5l664khs" path="res://races/human_portrait.png" id="1_2oiyc"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="1_kx2yi"]
+
+[resource]
+script = ExtResource("1_kx2yi")
+label = "Human"
+description = "Expert traders and magnificent diplomats"
+portrait = ExtResource("1_2oiyc")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

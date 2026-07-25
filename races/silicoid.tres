@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://davolsl2frvql"]
+
+[ext_resource type="Texture2D" uid="uid://bhx6r6pl216ep" path="res://races/silicoid_portrait.png" id="1_3ocsm"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_e7suv"]
+
+[resource]
+script = ExtResource("2_e7suv")
+label = "Silicoid"
+description = "Immune to hostile planet environments"
+portrait = ExtResource("1_3ocsm")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

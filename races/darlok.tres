@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://dvhh7b8f0wxm2"]
+
+[ext_resource type="Texture2D" uid="uid://dya52u08tos08" path="res://races/darlok_portrait.png" id="1_ygdk8"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_22jtm"]
+
+[resource]
+script = ExtResource("2_22jtm")
+label = "Darlok"
+description = "Supreme spies"
+portrait = ExtResource("1_ygdk8")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

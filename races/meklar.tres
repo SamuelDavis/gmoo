@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://chojbxcp5wajh"]
+
+[ext_resource type="Texture2D" uid="uid://b6jqjsoucxu7g" path="res://races/meklar_portrait.png" id="1_v3mdv"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_ocbns"]
+
+[resource]
+script = ExtResource("2_ocbns")
+label = "Meklar"
+description = "Enhanced factory controls"
+portrait = ExtResource("1_v3mdv")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

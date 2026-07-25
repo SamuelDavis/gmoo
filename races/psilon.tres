@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://7qm25doj4e2i"]
+
+[ext_resource type="Texture2D" uid="uid://5hb8w22vj2x4" path="res://races/psilon_portrait.png" id="1_kertn"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_tpbt5"]
+
+[resource]
+script = ExtResource("2_tpbt5")
+label = "Psilon"
+description = "Superior research techniques"
+portrait = ExtResource("1_kertn")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

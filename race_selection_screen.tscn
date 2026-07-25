@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://br6thh5o1gunt"]
+
+[ext_resource type="Script" uid="uid://di555atkjy82c" path="res://race_selection_screen.gd" id="1_0xanm"]
+[ext_resource type="Resource" uid="uid://sp3iyuqbygpw" path="res://races/races.tres" id="2_0xanm"]
+
+[node name="RaceSelectionScreen" type="Control" unique_id=1133312451]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xanm")
+races = ExtResource("2_0xanm")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1812602381]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 230.0
+grow_vertical = 2
+
+[node name="RaceOptions" type="VBoxContainer" parent="HBoxContainer" unique_id=2117888264]
+layout_mode = 2
+
+[node name="ChooseRaceLabel" type="Label" parent="HBoxContainer/RaceOptions" unique_id=1275260549]
+layout_mode = 2
+text = "Choose Race"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/RaceOptions" unique_id=1871247240]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/RaceOptions/ScrollContainer" unique_id=1999691967]
+layout_mode = 2
+
+[node name="RaceOptionsList" type="VBoxContainer" parent="HBoxContainer/RaceOptions/ScrollContainer/MarginContainer" unique_id=415960812]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="RaceDetails" type="VBoxContainer" parent="HBoxContainer" unique_id=2064283339]
+layout_mode = 2
+
+[node name="RacePortraitTextureRect" type="TextureRect" parent="HBoxContainer/RaceDetails" unique_id=830832819]
+unique_name_in_owner = true
+layout_mode = 2
+stretch_mode = 3
+
+[node name="RaceDescriptionLabel" type="Label" parent="HBoxContainer/RaceDetails" unique_id=1243593154]
+unique_name_in_owner = true
+layout_mode = 2
+autowrap_mode = 2
+
+[node name="SelectRaceButton" type="Button" parent="HBoxContainer/RaceDetails" unique_id=733328489]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = "Select Race"

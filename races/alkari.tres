@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://cvo778qrhb37i"]
+
+[ext_resource type="Texture2D" uid="uid://b3pwejkjwklsg" path="res://races/alkari_portrait.png" id="1_wcpxf"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_3ailn"]
+
+[resource]
+script = ExtResource("2_3ailn")
+label = "Alkari"
+description = "Superior pilots"
+portrait = ExtResource("1_wcpxf")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

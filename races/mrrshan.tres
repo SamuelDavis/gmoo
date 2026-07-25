@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://bn3uo6fev5mlm"]
+
+[ext_resource type="Texture2D" uid="uid://d0jfchywfbj87" path="res://races/mrrshan_portrait.png" id="1_50c1u"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_h4hc2"]
+
+[resource]
+script = ExtResource("2_h4hc2")
+label = "Mrrshan"
+description = "Superior gunners"
+portrait = ExtResource("1_50c1u")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

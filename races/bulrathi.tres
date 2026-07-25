@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://bsq6vmx0pc0v2"]
+
+[ext_resource type="Texture2D" uid="uid://ckn8xpq6tegym" path="res://races/bulrathi_portrait.png" id="1_vciql"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_pnava"]
+
+[resource]
+script = ExtResource("2_pnava")
+label = "Bulrathi"
+description = "Terrific ground fighters"
+portrait = ExtResource("1_vciql")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"

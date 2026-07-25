@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Race" format=3 uid="uid://b50lbv6shi3km"]
+
+[ext_resource type="Texture2D" uid="uid://dmtnx65p2jci" path="res://races/klackon_portrait.png" id="1_klp10"]
+[ext_resource type="Script" uid="uid://bq0jxv1w3y3c6" path="res://races/race.gd" id="2_aasha"]
+
+[resource]
+script = ExtResource("2_aasha")
+label = "Klackon"
+description = "Increased worker production"
+portrait = ExtResource("1_klp10")
+metadata/_custom_type_script = "uid://bq0jxv1w3y3c6"
