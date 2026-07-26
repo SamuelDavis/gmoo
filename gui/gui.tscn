@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://csuukyo8dwjvq"]
+
+[ext_resource type="Script" uid="uid://corqn6kjjxpur" path="res://gui/gui.gd" id="1_80edf"]
+
+[node name="GUI" type="CanvasLayer" unique_id=864612280]
+script = ExtResource("1_80edf")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1047766686]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

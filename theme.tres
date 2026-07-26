@@ -1,17 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://bq6oiqmps7x74"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ryxp0"]
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-
 [resource]
-HBoxContainer/constants/separation = 12
-MarginContainer/constants/margin_bottom = 8
-MarginContainer/constants/margin_left = 8
-MarginContainer/constants/margin_right = 8
-MarginContainer/constants/margin_top = 8
-PanelContainer/styles/panel = SubResource("StyleBoxFlat_ryxp0")
-ScrollContainer/constants/scrollbar_h_separation = 8
-VBoxContainer/constants/separation = 12
+MarginContainer/constants/margin_bottom = 12
+MarginContainer/constants/margin_left = 12
+MarginContainer/constants/margin_right = 12
+MarginContainer/constants/margin_top = 12

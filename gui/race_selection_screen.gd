@@ -4,7 +4,8 @@ signal race_selection_intended(race: Race)
 
 @export var races: Races
 
-@onready var _race_options_list: VBoxContainer = %RaceOptionsList
+@onready var _race_options_scroll: ScrollContainer = %ScrollContainer
+@onready var _race_options_list: VBoxContainer = %RaceOptionsContainer
 @onready var _race_portrait: TextureRect = %RacePortraitTextureRect
 @onready var _race_description: Label = %RaceDescriptionLabel
 @onready var _select_race_button: Button = %SelectRaceButton
@@ -23,6 +24,13 @@ func _ready() -> void:
 		button.button_pressed = _selected_race == null
 
 	_select_race_button.pressed.connect(_on_select_race)
+
+
+func _process(_delta: float) -> void:
+	var available: float = size.y - _race_options_scroll.position.y
+	_race_options_scroll.custom_minimum_size.y = minf(
+		_race_options_list.get_combined_minimum_size().y, available
+	)
 
 
 func _on_race_toggled(on: bool, race: Race) -> void:

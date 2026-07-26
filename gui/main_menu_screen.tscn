@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dihu0xas7fvoq"]
+
+[ext_resource type="Script" uid="uid://bdiv6l5rix5fl" path="res://gui/main_menu_screen.gd" id="1_4denh"]
+
+[node name="MainMenuScreen" type="Control" unique_id=1159844681]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4denh")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1581306515]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -85.5
+offset_right = 64.0
+offset_bottom = 85.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContinueGameButton" type="Button" parent="VBoxContainer" unique_id=1937399789]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = "Continue Game"
+
+[node name="NewGameButton" type="Button" parent="VBoxContainer" unique_id=628218931]
+unique_name_in_owner = true
+layout_mode = 2
+text = "New Game"
+
+[node name="LoadGameButton" type="Button" parent="VBoxContainer" unique_id=13103088]
+unique_name_in_owner = true
+layout_mode = 2
+disabled = true
+text = "Load Game"
+
+[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1933072464]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitGameButton" type="Button" parent="VBoxContainer" unique_id=961244007]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Quit"
