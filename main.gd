@@ -6,10 +6,18 @@ const RACE_SELECTION_SCREEN: PackedScene = preload("res://race_selection_screen.
 
 var _current_screen: Node
 var _new_game_configuration: GameConfiguration
+var _base_width: float = ProjectSettings.get_setting("display/window/size/viewport_width")
 
 
 func _ready() -> void:
+	get_window().size_changed.connect(_fit_ui_to_screen)
+	_fit_ui_to_screen()
 	_to_main_menu()
+
+
+func _fit_ui_to_screen() -> void:
+	var window: Window = get_window()
+	window.content_scale_factor = maxf(1.0, _base_width / maxi(1, window.size.x))
 
 
 func _to_main_menu() -> void:
