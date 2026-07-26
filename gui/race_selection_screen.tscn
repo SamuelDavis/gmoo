@@ -5,59 +5,54 @@
 
 [node name="RaceSelectionScreen" type="Control" unique_id=1133312451]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
 script = ExtResource("1_7y7b2")
 races = ExtResource("2_ux4qv")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1527619441]
-layout_mode = 1
-anchors_preset = 0
-offset_right = 197.0
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1375996572]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="RaceOptions" type="VBoxContainer" parent="HBoxContainer" unique_id=1473205519]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=2002090298]
 layout_mode = 2
 
-[node name="RaceOptionsLabel" type="Label" parent="HBoxContainer/RaceOptions" unique_id=580863651]
+[node name="RaceOptionsLabel" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=580863651]
 layout_mode = 2
 text = "Choose Race"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/RaceOptions" unique_id=192131209]
+[node name="RaceOptionsContainer" type="OptionButton" parent="VBoxContainer/HBoxContainer" unique_id=427516905]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_vertical = 3
-horizontal_scroll_mode = 0
 
-[node name="RaceOptionsContainer" type="VBoxContainer" parent="HBoxContainer/RaceOptions/ScrollContainer" unique_id=1072964609]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1691693215]
+layout_mode = 2
+
+[node name="RacePortraitTextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer2" unique_id=269848069]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_horizontal = 0
+size_flags_vertical = 0
 
-[node name="RaceDetails" type="VBoxContainer" parent="HBoxContainer" unique_id=1632979476]
-layout_mode = 2
-
-[node name="RacePortraitTextureRect" type="TextureRect" parent="HBoxContainer/RaceDetails" unique_id=269848069]
-unique_name_in_owner = true
-layout_mode = 2
-size_flags_horizontal = 4
-
-[node name="RaceDescriptionScroll" type="ScrollContainer" parent="HBoxContainer/RaceDetails" unique_id=597572783]
-custom_minimum_size = Vector2(84, 0)
-layout_mode = 2
-size_flags_vertical = 3
-horizontal_scroll_mode = 0
-
-[node name="RaceDescriptionLabel" type="Label" parent="HBoxContainer/RaceDetails/RaceDescriptionScroll" unique_id=38554950]
+[node name="RaceDescriptionLabel" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=38554950]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 0
 autowrap_mode = 2
 
-[node name="SelectRaceButton" type="Button" parent="HBoxContainer/RaceDetails" unique_id=1886413912]
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=909597200]
+layout_mode = 2
+
+[node name="CancelButton" type="Button" parent="VBoxContainer/HBoxContainer3" unique_id=280730760]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_horizontal = 3
+text = "Cancel"
+
+[node name="SelectRaceButton" type="Button" parent="VBoxContainer/HBoxContainer3" unique_id=1886413912]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
 disabled = true
 text = "Select Race"

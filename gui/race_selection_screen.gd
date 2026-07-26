@@ -1,44 +1,36 @@
 class_name RaceSelectionScreen extends Control
 
 signal race_selection_intended(race: Race)
+signal cancel_intended
 
 @export var races: Races
 
-@onready var _race_options_scroll: ScrollContainer = %ScrollContainer
-@onready var _race_options_list: VBoxContainer = %RaceOptionsContainer
+@onready var _race_options_list: OptionButton = %RaceOptionsContainer
 @onready var _race_portrait: TextureRect = %RacePortraitTextureRect
 @onready var _race_description: Label = %RaceDescriptionLabel
+@onready var _cancel_button: Button = %CancelButton
 @onready var _select_race_button: Button = %SelectRaceButton
 
 var _selected_race: Race
 
 
 func _ready() -> void:
-	var button_group: ButtonGroup = ButtonGroup.new()
 	for race: Race in races.list:
-		var button: CheckBox = CheckBox.new()
-		button.button_group = button_group
-		button.text = race.label
-		button.toggled.connect(_on_race_toggled.bind(race))
-		_race_options_list.add_child(button)
-		button.button_pressed = _selected_race == null
+		_race_options_list.add_item(race.label)
 
+	_race_options_list.item_selected.connect(_on_race_toggled)
+	_cancel_button.pressed.connect(cancel_intended.emit)
 	_select_race_button.pressed.connect(_on_select_race)
 
-
-func _process(_delta: float) -> void:
-	var available: float = size.y - _race_options_scroll.position.y
-	_race_options_scroll.custom_minimum_size.y = minf(
-		_race_options_list.get_combined_minimum_size().y, available
-	)
+	_on_race_toggled(0)
 
 
-func _on_race_toggled(on: bool, race: Race) -> void:
-	if on:
-		_select_race_button.disabled = false
-		_race_portrait.texture = race.portrait
-		_race_description.text = race.description
-		_selected_race = race
+func _on_race_toggled(index: int) -> void:
+	var race: Race = races.list[index]
+	_select_race_button.disabled = false
+	_race_portrait.texture = race.portrait
+	_race_description.text = race.description
+	_selected_race = race
 
 
 func _on_select_race() -> void:

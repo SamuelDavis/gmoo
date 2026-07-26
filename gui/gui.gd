@@ -5,8 +5,6 @@ const GAME_CONFIGURATION_SCREEN: PackedScene = preload("res://gui/game_configura
 const RACE_SELECTION_SCREEN: PackedScene = preload("res://gui/race_selection_screen.tscn")
 const SETTINGS_SCREEN: PackedScene = preload("res://gui/settings_screen.tscn")
 
-@onready var _content_container: Control = $MarginContainer
-
 var _current_screen: Node
 var _new_game_configuration: GameConfiguration
 var _base_width: float = ProjectSettings.get_setting("display/window/size/viewport_width")
@@ -47,6 +45,7 @@ func _to_race_selection() -> void:
 			_new_game_configuration.race = race
 			_to_main_game()
 	)
+	next_screen.cancel_intended.connect(_to_main_menu)
 
 	_switch_to(next_screen)
 
@@ -74,7 +73,7 @@ func _to_settings_screen() -> void:
 
 func _switch_to(next_screen: Node) -> void:
 	if _current_screen:
-		_content_container.remove_child(_current_screen)  # avoid two screens while freeing
+		remove_child(_current_screen)  # avoid two screens while freeing
 		_current_screen.queue_free()
 	_current_screen = next_screen
-	_content_container.add_child(_current_screen)
+	add_child(_current_screen)
